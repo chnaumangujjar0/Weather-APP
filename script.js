@@ -32,21 +32,21 @@ document.querySelector(".search button").addEventListener("click",()=>{
     wind.innerHTML=res.wind.speed +" km/h";
     console.log(res.weather[0].main)
     if(res.weather[0].main == "Clouds"){
-        weatherImg.src="../Weather_App/weather-app-img/clouds.png";
+        weatherImg.src="./weather-app-img/clouds.png";
     }else if(res.weather[0].main =="Clear"){
-         weatherImg.src="../Weather_App/weather-app-img/clear.png"
+         weatherImg.src="./weather-app-img/clear.png"
     }else if(res.weather[0].main == "Drizzle"){
-         weatherImg.src="../Weather_App/weather-app-img/drizzle.png"
+         weatherImg.src="./weather-app-img/drizzle.png"
     }else if(res.weather[0].main == "Wind"){
-         weatherImg.src="../Weather_App/weather-app-img/wind.png"
+         weatherImg.src="./weather-app-img/wind.png"
     }else if(res.weather[0].main == "Mist"){
-         weatherImg.src="../Weather_App/weather-app-img/mist.png"
+         weatherImg.src="./weather-app-img/mist.png"
     }else if(res.weather[0].main == "Snow"){
-         weatherImg.src="../Weather_App/weather-app-img/snow.png"        
+         weatherImg.src="./weather-app-img/snow.png"        
     }else if(res.weather[0].main == "Rain"){
-         weatherImg.src="../Weather_App/weather-app-img/rain.png"
+         weatherImg.src="./weather-app-img/rain.png"
     }else{
-         weatherImg.src="../Weather_App/weather-app-img/humidity.png"
+         weatherImg.src="./weather-app-img/humidity.png"
     }
 
 
@@ -57,4 +57,5 @@ document.querySelector(".search button").addEventListener("click",()=>{
      console.log(err)
 })
 })
+
 
